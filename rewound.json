@@ -62,8 +62,8 @@
       "scale": 1.0
     },
     "effects": {
-      "x": 5,
-      "y": 143,
+      "x": 12,
+      "y": 511,
       "rightAnchored": true,
       "centred": false,
       "verticallyCentred": false,
@@ -249,7 +249,7 @@
     },
     "notifications": {
       "x": 12,
-      "y": 48,
+      "y": 39,
       "rightAnchored": true,
       "centred": false,
       "verticallyCentred": false,
@@ -289,7 +289,7 @@
     },
     {
       "id": "criticals",
-      "enabled": true,
+      "enabled": false,
       "key": 0,
       "settings": {
         "Mode": "Rewound"
@@ -7723,7 +7723,7 @@
   "profile": "rewound",
   "creator": "bipas",
   "createdAt": "2026-11-14 11:03:18",
-  "savedAt": "2026-11-14 11:03:18",
+  "savedAt": "2026-11-14 11:09:26",
   "authors": [
     "bipas"
   ]
