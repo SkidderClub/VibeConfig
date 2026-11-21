@@ -9,7 +9,7 @@
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
-      "scale": 1.0,
+      "scale": 1.0013245,
       "theme": "Lavalamp"
     },
     "arraylist": {
@@ -46,8 +46,8 @@
       "scale": 1.0
     },
     "blockcounter": {
-      "x": 601,
-      "y": 352,
+      "x": 604,
+      "y": 396,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -62,8 +62,8 @@
       "scale": 1.0
     },
     "effects": {
-      "x": 12,
-      "y": 511,
+      "x": 1117,
+      "y": 499,
       "rightAnchored": true,
       "centred": false,
       "verticallyCentred": false,
@@ -81,7 +81,7 @@
     },
     "keystrokes": {
       "x": 9,
-      "y": 247,
+      "y": 227,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -90,7 +90,7 @@
     },
     "radar": {
       "x": 9,
-      "y": 43,
+      "y": 48,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -130,9 +130,17 @@
       "verticallyCentred": false,
       "scale": 1.0
     },
+    "keybindlist": {
+      "x": 12,
+      "y": 290,
+      "rightAnchored": false,
+      "centred": false,
+      "verticallyCentred": false,
+      "scale": 1.0
+    },
     "customchat": {
       "x": 8,
-      "y": 39,
+      "y": 68,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -175,7 +183,7 @@
     },
     "targethud": {
       "x": 660,
-      "y": 360,
+      "y": 369,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -215,8 +223,8 @@
       "scale": 1.0
     },
     "inventory": {
-      "x": 9,
-      "y": 252,
+      "x": 8,
+      "y": 324,
       "rightAnchored": false,
       "centred": false,
       "verticallyCentred": false,
@@ -289,10 +297,10 @@
     },
     {
       "id": "criticals",
-      "enabled": false,
+      "enabled": true,
       "key": 0,
       "settings": {
-        "Mode": "Rewound"
+        "Mode": "RewoundAdjust"
       }
     },
     {
@@ -313,14 +321,23 @@
       "key": 0,
       "settings": {
         "Target": "Combat Target",
-        "Radius": "1.8",
+        "Radius": "2.2",
         "Target Range": "4.5",
         "Direction": "Automatic",
+        "Aggressive": "false",
+        "Only While Killaura": "true",
+        "Only While Speed": "true",
+        "Only While Fly": "true",
         "Only While Jump Key": "false",
         "Auto Jump": "false",
         "Void Check": "true",
         "Draw Radius": "true",
-        "Radius Color": "#FFFFFFB4"
+        "Radius Color": "#FFFFFFFF",
+        "Radius Style": "Dotted Line",
+        "Radius Line Width": "1.5",
+        "Radius Dot Size": "6.0",
+        "Radius Marks": "28.0",
+        "Radius Dash (%)": "50.0"
       }
     },
     {
@@ -349,7 +366,7 @@
     },
     {
       "id": "beveragenotification",
-      "enabled": true,
+      "enabled": false,
       "key": 0,
       "settings": {
         "Chat Message": "true",
@@ -383,7 +400,7 @@
         "Color": "#64DFFFBB",
         "Fade Color": "#A078FFBB",
         "Color Speed": "1.0",
-        "Line Width": "1.5",
+        "Line Width": "4.0",
         "Distance Fade": "true",
         "Glow": "true"
       }
@@ -433,11 +450,20 @@
       "enabled": true,
       "key": 0,
       "settings": {
-        "Mode": "Rewound",
+        "Mode": "RewoundAdjust",
         "Height": "1.0",
+        "Adjust Height": "2.5",
         "Timer": "false",
         "Delay": "150.0",
         "Speed check": "false"
+      }
+    },
+    {
+      "id": "noescmenu",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Allow manual": "true"
       }
     },
     {
@@ -456,7 +482,7 @@
       "settings": {
         "Mode": "Pull",
         "Void Check": "true",
-        "Maximum Drop": "3.0",
+        "Maximum Drop": "8.0",
         "Pull Speed": "1.65"
       }
     },
@@ -474,7 +500,7 @@
       "key": 0,
       "settings": {
         "Mode": "Motion",
-        "Up Speed": "0.35",
+        "Up Speed": "0.25",
         "Down Speed": "0.35",
         "Pulse Interval": "2.0"
       }
@@ -494,8 +520,8 @@
     },
     {
       "id": "emotewheel",
-      "enabled": false,
-      "key": 0,
+      "enabled": true,
+      "key": 56,
       "settings": {
         "Sit While AFK": "true",
         "Open Wheel": "false"
@@ -541,7 +567,7 @@
           "2D",
           "Skeletal"
         ],
-        "Edit Appearance": "Players",
+        "Edit Appearance": "Friends",
         "2D Distance Scaling": "0.6",
         "2D Element Gap": "3.0",
         "2D Global Gradient Stops": "8.0",
@@ -2530,6 +2556,7 @@
         "Distance Position": "Name",
         "Held Item Position": "Bottom",
         "Friends/Teams Use Player Defaults": "true",
+        "Friends/Teams Override Colors": "true",
         "Friends/Teams Color Mode": "Team Color",
         "Friends/Teams Override Color": "#5BE8A6FF",
         "Friends/Teams Outline": "#5BE8A6FF",
@@ -2550,6 +2577,7 @@
         "Friends/Teams Distance Position": "Name",
         "Friends/Teams Held Position": "Bottom",
         "Targets Use Player Defaults": "true",
+        "Targets Override Colors": "true",
         "Targets Color Mode": "Color",
         "Targets Override Color": "#FF001EFF",
         "Targets Outline": "#FF5B6EFF",
@@ -5014,8 +5042,8 @@
         "Friends/Teams Health End Hurt Color": "#FF5656FF",
         "Friends/Teams Health End Hurt Color Source": "Static",
         "Targets Override Color Source": "Static",
-        "Targets Override Color Hurt Override": "false",
-        "Targets Override Color Hurt Color": "#FF5656FF",
+        "Targets Override Color Hurt Override": "true",
+        "Targets Override Color Hurt Color": "#00FF20FF",
         "Targets Override Color Hurt Color Source": "Static",
         "Targets Outline Source": "Static",
         "Targets Outline Hurt Override": "false",
@@ -5065,6 +5093,8 @@
         "Tracer Color 2": "#FFFFFFFF",
         "Hizzy Color 1": "#FF3BD4FF",
         "Hizzy Color 2": "#3BE7FFFF",
+        "Diablo Color 1": "#9000C4FF",
+        "Diablo Color 2": "#9000C4FF",
         "Line Width": "2.0",
         "Animation Speed": "1.0"
       }
@@ -5084,6 +5114,15 @@
         "Entities": [
           "Players"
         ],
+        "Projectiles": [
+          "Arrows",
+          "Snowballs",
+          "Eggs",
+          "Ender pearls",
+          "Fireballs"
+        ],
+        "Projectile Names": "true",
+        "Projectile Distances": "false",
         "Visibility": "All",
         "Invisibility": "Include",
         "Visible Opacity": "0.95",
@@ -5355,7 +5394,7 @@
       "enabled": false,
       "key": 0,
       "settings": {
-        "Color": "#2DE2C2C5"
+        "Color": "#FF00C9C5"
       }
     },
     {
@@ -5499,7 +5538,7 @@
     {
       "id": "freelook",
       "enabled": false,
-      "key": 56,
+      "key": 0,
       "settings": {
         "Hold": "true"
       }
@@ -5791,6 +5830,7 @@
       "key": 0,
       "settings": {
         "Blocking Style": "Slide",
+        "Adjust Equip Animation": "0.5",
         "Items": [
           "Swords",
           "Consumables",
@@ -5822,7 +5862,7 @@
         "Time": "6.0",
         "Time Speed": "150.0",
         "Dynamic Speed": "20.0",
-        "Weather Mode": "Sun",
+        "Weather Mode": "Snow",
         "Weather Strength": "1.0",
         "Blur": "true",
         "Blur Method": "Gaussian",
@@ -5840,8 +5880,8 @@
         "Fade Speed": "1.0",
         "Affect Sky": "true",
         "Keep Vanilla Fog": "false",
-        "Firefly Count": "32.0",
-        "Firefly Range": "14.0",
+        "Firefly Count": "128.0",
+        "Firefly Range": "36.0",
         "Firefly Speed": "1.0",
         "Firefly Size": "0.045",
         "Firefly Color": "#F600FFFF",
@@ -5888,17 +5928,52 @@
         "Mobs": "false",
         "Animals": "false",
         "Invisibles": "true",
-        "Ignore Teammates": "false",
-        "Teammate Detection": "Chestplate",
+        "Ignore Teammates": "true",
+        "Teammate Detection": "Auto",
         "Target Area": "false",
-        "Display Target Area": "false",
-        "Invert Target Area": "false",
-        "Pos1 X": "0",
-        "Pos1 Y": "0",
-        "Pos1 Z": "0",
-        "Pos2 X": "0",
-        "Pos2 Y": "255",
-        "Pos2 Z": "0"
+        "Display Target Area": "true",
+        "Invert Target Area": "true",
+        "Pos1 X": "143",
+        "Pos1 Y": "45",
+        "Pos1 Z": "170",
+        "Pos2 X": "178",
+        "Pos2 Y": "100",
+        "Pos2 Z": "138"
+      }
+    },
+    {
+      "id": "keepsprint",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Remove reset sprint": "true",
+        "Remove slow down": "true",
+        "Only on ground": "false"
+      }
+    },
+    {
+      "id": "disabler",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Mode": "Rewound"
+      }
+    },
+    {
+      "id": "jesus",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Mode": "RewoundAdjust"
+      }
+    },
+    {
+      "id": "phase",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Mode": "Watchdog",
+        "Blink phase at": "1.25"
       }
     },
     {
@@ -6044,7 +6119,7 @@
     },
     {
       "id": "wtab",
-      "enabled": true,
+      "enabled": false,
       "key": 0,
       "settings": {
         "Chance": "100.0",
@@ -6138,14 +6213,15 @@
     {
       "id": "autowalk",
       "enabled": false,
-      "key": 0,
+      "key": 50,
       "settings": {
-        "Mode": "Forward",
+        "Mode": "Path",
         "Auto Jump": "true",
         "Sprint": "false",
-        "Yaw Speed": "180.0",
-        "Rotate Pitch": "true",
-        "Pitch Speed": "90.0",
+        "NoRotate": "false",
+        "Yaw Speed": "720.0",
+        "Rotate Pitch": "false",
+        "Pitch Speed": "360.0",
         "Show Path": "true"
       }
     },
@@ -6239,9 +6315,10 @@
           "min": 4.25,
           "max": 4.25
         },
+        "Target Amount": "10.0",
         "Autoblock Mode": "Rewound",
         "Only When Rightclicking": "false",
-        "Blocking Range": "4.6",
+        "Blocking Range": "4.4",
         "Range": "3.5",
         "Maximum hurt time": "200.0",
         "Maximum hold duration": "150.0",
@@ -6266,7 +6343,7 @@
           "min": 12.5,
           "max": 20.5
         },
-        "Clicking Range": "4.4",
+        "Clicking Range": "4.3",
         "Clicking Mode": "Butterfly",
         "Normal CPS": {
           "min": 4.6,
@@ -6289,10 +6366,10 @@
           "max": 18.0
         },
         "Not When BlockBreaking": "true",
-        "Aim Through Walls": "false",
-        "Piercing": "false",
+        "Aim Through Walls": "true",
+        "Piercing": "true",
         "Not In Inv": "true",
-        "Target Mode": "Yaw",
+        "Target Mode": "Health",
         "Max Angle": "180.0"
       }
     },
@@ -6310,13 +6387,43 @@
       }
     },
     {
+      "id": "aiaurav2",
+      "enabled": false,
+      "key": 0,
+      "settings": {
+        "Attack Range": "3.0",
+        "Rotation Range": "6.0",
+        "Pre-Swing": "1.0",
+        "Aim": "Yours",
+        "Rotation": "Silent",
+        "Clicking": "Learned",
+        "CPS": {
+          "min": 10.0,
+          "max": 14.0
+        },
+        "Block Hit": "false",
+        "Hit Timing (%)": {
+          "min": 0.0,
+          "max": 5.0
+        },
+        "Learn": "true",
+        "Learn From Recordings": "false",
+        "Reaction (ms)": "175.0",
+        "Tracking Delay (ms)": "50.0",
+        "Miss Rate (%)": "25.0",
+        "Field Of View": "170.0",
+        "Record Fights": "false",
+        "Reset Learned": "false"
+      }
+    },
+    {
       "id": "speed",
       "enabled": false,
       "key": 33,
       "settings": {
         "Mode": "Rewound",
         "Use timer": "true",
-        "Fast fall": "Off",
+        "Fast fall": "Snap",
         "Custom Y": "0.42",
         "Ground Strafe": "1.6",
         "Air Strafe": "0.0",
@@ -6333,21 +6440,39 @@
     {
       "id": "fly",
       "enabled": false,
-      "key": 0,
+      "key": 9,
       "settings": {
-        "Mode": "Basic",
+        "Mode": "Rewound",
         "Horizontal Speed": "0.8",
         "Vertical Speed": "0.35",
         "AAC1.9.10-Speed": "0.3",
         "AAC3.0.5-Fast": "true",
         "AAC3.3.12-Motion": "10.0",
-        "AAC3.3.13-Motion": "10.0"
+        "AAC3.3.13-Motion": "10.0",
+        "Rewound Speed": "1.0",
+        "Rewound Damage": "Normal",
+        "Rewound Timer": "true",
+        "Rewound Timer Speed": "2.0",
+        "Rewound Timer Time": "500.0",
+        "Rewound Drop": "true",
+        "Rewound Drop Speed": "4.0",
+        "Rewound Disabler": "true",
+        "Rewound Ender Pearl": "true",
+        "Rewound Fireball": "true",
+        "Rewound Packet": "true",
+        "Rewound Horizontal Speed": "4.0",
+        "Rewound Vertical Speed": "2.0",
+        "Rewound Progress": "true",
+        "Rewound Bobbing": "None",
+        "Item Switching": "Silent",
+        "Slot Highlight": "true",
+        "Slot Highlight Color": "#2DE2C2FF"
       }
     },
     {
       "id": "freecam",
       "enabled": false,
-      "key": 9,
+      "key": 0,
       "settings": {
         "Flight Mode": "Acro",
         "Turn Rate": "120.0",
@@ -6391,10 +6516,10 @@
     },
     {
       "id": "nofall",
-      "enabled": false,
+      "enabled": true,
       "key": 0,
       "settings": {
-        "Mode": "No Ground"
+        "Mode": "Always On Ground"
       }
     },
     {
@@ -6607,6 +6732,23 @@
       }
     },
     {
+      "id": "rewoundpit",
+      "enabled": false,
+      "key": 50,
+      "settings": {
+        "Modes": [],
+        "Filter Messages": "true",
+        "Always Use TargetArea": "true",
+        "Auto Unstuck": "false",
+        "Unstuck Delay (s)": "60.0",
+        "Menu Delay (ms)": "125.0",
+        "Perk Slot 1": "Golden Heads",
+        "Perk Slot 2": "Strength-Chaining",
+        "Perk Slot 3": "Lucky Diamond",
+        "Perk Slot 4": "Safety First"
+      }
+    },
+    {
       "id": "statistics",
       "enabled": false,
       "key": 0,
@@ -6616,7 +6758,10 @@
       "id": "flagdetector",
       "enabled": true,
       "key": 0,
-      "settings": {}
+      "settings": {
+        "Stop Movement": "false",
+        "Ticks": "20.0"
+      }
     },
     {
       "id": "particles",
@@ -6649,6 +6794,39 @@
       }
     },
     {
+      "id": "debuginfo",
+      "enabled": false,
+      "key": 0,
+      "settings": {
+        "Ping": "true",
+        "TPS": "true",
+        "CPS": "true",
+        "BPS": "true",
+        "FPS": "true",
+        "Coordinates": "true",
+        "Facing": "true",
+        "Timer": "true",
+        "Packets": "true",
+        "Memory": "true",
+        "Server": "false",
+        "Biome": "false",
+        "Entities": "false",
+        "Player State": "false",
+        "Chunk \u0026 Light": "false",
+        "Active Modules": "false",
+        "Position": "Top Left",
+        "Offset X": "8.0",
+        "Offset Y": "42.0",
+        "Scale": "1.0",
+        "Show Header": "true",
+        "Background": "true",
+        "Color Values": "true",
+        "Hide In F3": "true",
+        "Accent Color": "#4CC9F0FF",
+        "Background Alpha": "170.0"
+      }
+    },
+    {
       "id": "language",
       "enabled": true,
       "key": 0,
@@ -6661,9 +6839,18 @@
       "enabled": true,
       "key": 0,
       "settings": {
+        "Drop confirm": "false",
         "Features": [
           "Hide Black Background",
-          "AntiInvisibility"
+          "AntiInvisibility",
+          "RealRewoundPlayers"
+        ],
+        "RealRewoundPlayers Views": [
+          "ESP",
+          "Tab"
+        ],
+        "RealRewoundPlayers Hide In": [
+          "Pit"
         ],
         "Hide In": [
           "Inventory",
@@ -6671,6 +6858,50 @@
           "Other Vanilla GUIs"
         ],
         "Invisible Alpha": "125.0"
+      }
+    },
+    {
+      "id": "shopsaver",
+      "enabled": true,
+      "key": 0,
+      "settings": {}
+    },
+    {
+      "id": "joinclaim",
+      "enabled": false,
+      "key": 0,
+      "settings": {}
+    },
+    {
+      "id": "antiaim",
+      "enabled": true,
+      "key": 0,
+      "settings": {
+        "Yaw": "Spin",
+        "Pitch": "Disabled",
+        "Spin Speed": "29.5",
+        "Pause For": [
+          "NotWhileBow",
+          "NotWhilePot"
+        ]
+      }
+    },
+    {
+      "id": "norotateset",
+      "enabled": true,
+      "key": 0,
+      "settings": {}
+    },
+    {
+      "id": "rawmouseinput",
+      "enabled": false,
+      "key": 0,
+      "settings": {
+        "Mouse Selection": "All Mice",
+        "Backend": "Auto",
+        "Poll Delay": "1.0",
+        "Vanilla Fallback": "true",
+        "Rescan Mouse": "false"
       }
     },
     {
@@ -6748,8 +6979,9 @@
           "max": 3.0
         },
         "Sideways": "true",
-        "Sprint": "Off",
-        "Tower": "NCP",
+        "Sprint": "Always",
+        "Tower": "RewoundNovoline",
+        "Stop tower on flag": "true",
         "Keep Y": "false",
         "Sneak": "false",
         "Start Options": [
@@ -6774,7 +7006,9 @@
         "Swing": "false",
         "Jump": "false",
         "Drag Click": "false",
-        "Render Count": "false"
+        "Render Count": "false",
+        "Line": "false",
+        "Line Color": "#00AAFFFF"
       }
     },
     {
@@ -6782,7 +7016,7 @@
       "enabled": true,
       "key": 35,
       "settings": {
-        "Mode": "OpenInv",
+        "Mode": "Vanilla",
         "Start Delay (ms)": {
           "min": 0.0,
           "max": 50.0
@@ -6792,8 +7026,8 @@
           "max": 10.0
         },
         "Drop Duplicates": "true",
-        "Max Food Slots": "8.0",
-        "Max Block Slots": "18.0"
+        "Max Food Slots": "3.0",
+        "Max Block Slots": "6.0"
       }
     },
     {
@@ -6805,14 +7039,15 @@
         "Slot Highlight": "true",
         "Slot Highlight Color": "#2DE2C2FF",
         "Modes": [
-          "Auto Pot"
+          "Auto Pot",
+          "Auto Head"
         ],
         "Eat Below Hunger": "16.0",
         "Auto Eat Walk Backwards": "false",
         "Auto Gapple Walk Backwards": "false",
-        "Count Absorption": "false",
+        "Count Absorption": "true",
         "Grounded Splash Potions": "true",
-        "Auto Refill": "true",
+        "Auto Refill": "false",
         "Refill While Moving": "false",
         "Refill Mode": "Open Inventory",
         "Refill Delay (ms)": {
@@ -6832,20 +7067,24 @@
           "max": 160.0
         },
         "Use Timeout (ms)": "4000.0",
-        "Auto Pot Health": "14.0",
+        "Auto Pot Health": "10.0",
         "Auto Pot Delay (ms)": {
-          "min": 250.0,
-          "max": 450.0
+          "min": 40.0,
+          "max": 140.0
         },
         "Auto Soup Health": "14.0",
         "Auto Soup Delay (ms)": {
           "min": 250.0,
           "max": 450.0
         },
-        "Auto Head Health": "12.0",
+        "Auto Head Health": "16.5",
         "Auto Head Delay (ms)": {
-          "min": 250.0,
-          "max": 450.0
+          "min": 40.0,
+          "max": 40.0
+        },
+        "Auto Head Pause (ms)": {
+          "min": 400.0,
+          "max": 400.0
         },
         "Auto Eat Health": "20.0",
         "Auto Eat Delay (ms)": {
@@ -6984,6 +7223,7 @@
         "FOV": "360.0",
         "Scan Rate (ms)": "225.0",
         "Switch Back": "true",
+        "Own Bed": "true",
         "Render Target": "true",
         "Target Color": "#FF4F6D78"
       }
@@ -7031,7 +7271,7 @@
       "enabled": true,
       "key": 0,
       "settings": {
-        "Deathmatch": "false"
+        "Deathmatch": "true"
       }
     },
     {
@@ -7053,7 +7293,6 @@
           "notifications",
           "watermark",
           "targethud",
-          "customchat",
           "keystrokes",
           "radar",
           "blockcounter",
@@ -7062,7 +7301,8 @@
           "customhotbar",
           "customhealth",
           "customtab",
-          "inventory"
+          "inventory",
+          "customchat"
         ],
         "Replace Scoreboard Server": "true",
         "Watermark Details": [
@@ -7116,7 +7356,8 @@
           "Speed",
           "Scaffold",
           "Projectile Aura",
-          "AIAura"
+          "AIAura",
+          "AutoWalk"
         ],
         "ArrayList Outline": "false",
         "Watermark Outline": "true",
@@ -7185,6 +7426,7 @@
         "Target HUD Absorption": "true",
         "Target HUD Ping": "true",
         "Target HUD Smooth Health": "true",
+        "Target HUD Diablo Accent": "#9000C4FF",
         "Target HUD Damage Tint": "true",
         "Target HUD Particles": "true",
         "Target HUD Particle Color": "#B9AEFFFF",
@@ -7197,7 +7439,7 @@
         "Chat Corner Radius": "6.0",
         "Chat Text Shadow": "true",
         "Chat Border": "true",
-        "Chat Width": "320.0",
+        "Chat Width": "363.0",
         "Chat Height": "150.0",
         "Chat Line Height": "11.0",
         "Chat Fade Seconds": "10.0",
@@ -7205,6 +7447,7 @@
         "Chat Fade Messages": "true",
         "Chat Keep Message Colors": "true",
         "Chat Scrollbar": "true",
+        "Chat Infinite Scrolling": "true",
         "Hotbar Background": "#141B27C4",
         "Hotbar Accent": "#79BFFFFF",
         "Hotbar Text": "#F0F3F9FF",
@@ -7220,9 +7463,9 @@
         "Hotbar Experience Bar": "true",
         "Hotbar Selected Item Name": "true",
         "Hotbar Experience Color": "#8DD34FFF",
-        "Hotbar Selected Slot": "#91E2FFFF",
+        "Hotbar Selected Slot": "#DF37FFFF",
         "Hotbar Empty Slot": "#232B3870",
-        "Hotbar Selection Style": "Outline",
+        "Hotbar Selection Style": "Fill and Outline",
         "Hotbar Selection Easing": "Exponential",
         "Hotbar Selection Thickness": "1.4",
         "Hotbar Selection Corners": "3.0",
@@ -7230,7 +7473,7 @@
         "Hotbar Selection Speed": "22.0",
         "Hotbar Selection Glow": "false",
         "Hotbar Selection Glow Strength": "0.35",
-        "Hotbar Selection Fill": "#79BFFF33",
+        "Hotbar Selection Fill": "#C546FF33",
         "Hotbar Common Rarity": "#8F9AA8FF",
         "Hotbar Uncommon Rarity": "#62BD65FF",
         "Hotbar Rare Rarity": "#4C9DFFFF",
@@ -7462,6 +7705,10 @@
         "Radar Width": "144.0",
         "Radar Height": "144.0",
         "Radar View": "Map",
+        "Radar Map Corner Radius": "15.0",
+        "Radar Only Enabled": "true",
+        "Radar Show Status": "true",
+        "Radar Maximum Rows": "12.0",
         "Radar Range": "48.0",
         "Radar Zoom": "1.0",
         "Radar Rotate": "true",
@@ -7492,6 +7739,10 @@
         "Network Graph Width": "210.0",
         "Network Graph Height": "74.0",
         "Network Graph View": "Radar",
+        "Network Graph Map Corner Radius": "15.0",
+        "Network Graph Only Enabled": "true",
+        "Network Graph Show Status": "true",
+        "Network Graph Maximum Rows": "12.0",
         "Network Graph Range": "48.0",
         "Network Graph Zoom": "1.0",
         "Network Graph Rotate": "true",
@@ -7522,6 +7773,10 @@
         "Kill Feed Width": "210.0",
         "Kill Feed Height": "144.0",
         "Kill Feed View": "Radar",
+        "Kill Feed Map Corner Radius": "15.0",
+        "Kill Feed Only Enabled": "true",
+        "Kill Feed Show Status": "true",
+        "Kill Feed Maximum Rows": "12.0",
         "Kill Feed Range": "48.0",
         "Kill Feed Zoom": "1.0",
         "Kill Feed Rotate": "true",
@@ -7552,6 +7807,10 @@
         "Session Timeline Width": "210.0",
         "Session Timeline Height": "144.0",
         "Session Timeline View": "Radar",
+        "Session Timeline Map Corner Radius": "15.0",
+        "Session Timeline Only Enabled": "true",
+        "Session Timeline Show Status": "true",
+        "Session Timeline Maximum Rows": "12.0",
         "Session Timeline Range": "48.0",
         "Session Timeline Zoom": "1.0",
         "Session Timeline Rotate": "true",
@@ -7582,6 +7841,10 @@
         "Candle Width": "210.0",
         "Candle Height": "144.0",
         "Candle View": "Radar",
+        "Candle Map Corner Radius": "15.0",
+        "Candle Only Enabled": "true",
+        "Candle Show Status": "true",
+        "Candle Maximum Rows": "12.0",
         "Candle Range": "48.0",
         "Candle Zoom": "1.0",
         "Candle Rotate": "true",
@@ -7602,12 +7865,46 @@
         "Candle Flame Motion": "1.0",
         "Candle Flame Color": "#FFB853FF",
         "Candle Add Bookmark": "false",
-        "Candle Open History": "false"
+        "Candle Open History": "false",
+        "Keybind List Background": "#141B27C4",
+        "Keybind List Accent": "#79BFFFFF",
+        "Keybind List Text": "#F0F3F9FF",
+        "Keybind List Corner Radius": "6.0",
+        "Keybind List Text Shadow": "true",
+        "Keybind List Border": "true",
+        "Keybind List Width": "210.0",
+        "Keybind List Height": "144.0",
+        "Keybind List View": "Radar",
+        "Keybind List Map Corner Radius": "15.0",
+        "Keybind List Only Enabled": "true",
+        "Keybind List Show Status": "true",
+        "Keybind List Maximum Rows": "12.0",
+        "Keybind List Range": "48.0",
+        "Keybind List Zoom": "1.0",
+        "Keybind List Rotate": "true",
+        "Keybind List Sweep": "true",
+        "Keybind List Players": "true",
+        "Keybind List Dropped Items": "false",
+        "Keybind List Markers": "Arrow",
+        "Keybind List Marker Size": "4.0",
+        "Keybind List Friend Color": "#79E6A8FF",
+        "Keybind List Target Color": "#FF6980FF",
+        "Keybind List Player Color": "#E7EAF4FF",
+        "Keybind List Avatars": "true",
+        "Keybind List Weapon Icons": "true",
+        "Keybind List Lifetime": "8.0",
+        "Keybind List Rows": "4.0",
+        "Keybind List Jitter": "true",
+        "Keybind List Stall Markers": "true",
+        "Keybind List Flame Motion": "1.0",
+        "Keybind List Flame Color": "#FFB853FF",
+        "Keybind List Add Bookmark": "false",
+        "Keybind List Open History": "false"
       }
     },
     {
       "id": "togglesound",
-      "enabled": false,
+      "enabled": true,
       "key": 0,
       "settings": {
         "Style": "Soft",
@@ -7643,7 +7940,7 @@
       "enabled": false,
       "key": 0,
       "settings": {
-        "Layout Data": "37\u003dCHESTPLATE;38\u003dLEGGINGS;39\u003dBOOTS;0\u003dSWORD;2\u003dBLOCK;40\u003dSTAIRS;41\u003dSLAB;42\u003dFLOWER;43\u003dSAND;17\u003dCOMPASS;1\u003dBOW;36\u003dHELMET",
+        "Layout Data": "music-rules\u003d1;37\u003dCHESTPLATE;38\u003dLEGGINGS;39\u003dBOOTS;0\u003dSWORD;2\u003dBLOCK;17\u003dCOMPASS;1\u003dBOW;36\u003dHELMET;4\u003dGOLDEN_APPLE;40\u003dSTAIRS;41\u003dSLAB;42\u003dFLOWER;43\u003dSAND;44\u003dDISK;45\u003dSNOWBALL;46\u003dWATER_BUCKET;47\u003dLAVA_BUCKET;8\u003dENDER_PEARL",
         "Draw Position": "true",
         "Position Color": "#2DE2C2FF"
       }
@@ -7672,6 +7969,14 @@
       }
     },
     {
+      "id": "killsay",
+      "enabled": false,
+      "key": 0,
+      "settings": {
+        "Mode": "Vibe"
+      }
+    },
+    {
       "id": "keybindeditor",
       "enabled": false,
       "key": 0,
@@ -7690,7 +7995,7 @@
       "settings": {
         "Theme": "Lavalamp",
         "Module Sorting": "Alphabetic",
-        "Breeze Theme": "Default",
+        "Breeze Theme": "Flarial",
         "Breeze Favorites": "",
         "Primary Color": "#2DE2C2FF",
         "Secondary Color": "#A855F7FF",
@@ -7723,7 +8028,7 @@
   "profile": "rewound",
   "creator": "bipas",
   "createdAt": "2026-11-14 11:03:18",
-  "savedAt": "2026-11-14 11:09:26",
+  "savedAt": "2026-11-21 11:45:09",
   "authors": [
     "bipas"
   ]
